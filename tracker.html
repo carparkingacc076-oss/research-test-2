@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker | MindPulse AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="ai-pulse-ring"></div>
+            <i class="fa-solid fa-brain-circuit loader-icon"></i>
+            <h2>Loading MindPulse AI...</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <header id="header" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>MindPulse AI</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="resources.html">Resources</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="assessment.html" class="btn-primary-sm">Start Screening</a>
+                <button id="mobile-menu-btn" aria-label="Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-container alt-bg">
+        <div class="section-header">
+            <h2>Daily Mood Tracker</h2>
+            <p>Log how you are feeling today to receive motivational insight.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; text-align: left;">
+            <p>This tracker helps you pause and notice how your mood changes from day to day. It is a simple way to build emotional awareness and reflect on what supports you.</p>
+            <p style="margin-top: 0.5rem;">You can use it alongside the assessment and resources pages to create a more complete picture of your wellbeing.</p>
+        </div>
+        <div class="tracker-card glass-card">
+            <div class="mood-picker-panel">
+                <label for="mood-select">Choose your current mood</label>
+                <select id="mood-select" class="mood-select">
+                    <option value="">Select a mood</option>
+                    <option value="great">Great</option>
+                    <option value="good">Good</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="low">Low</option>
+                    <option value="sad">Sad</option>
+                </select>
+                <button type="button" id="save-mood-btn" class="btn-primary-sm">Save Mood</button>
+            </div>
+            <div class="mood-selectors">
+                <button class="mood-btn" data-mood="great" data-quote="Fantastic energy! Keep channeling this positivity into your studies and hobbies today.">😀</button>
+                <button class="mood-btn" data-mood="good" data-quote="Wonderful! Steady progress builds magnificent achievements. Keep up the great flow.">😊</button>
+                <button class="mood-btn" data-mood="neutral" data-quote="A balanced day is a peaceful day. Take time to check in with yourself and breathe.">😐</button>
+                <button class="mood-btn" data-mood="low" data-quote="It's completely okay to have low-energy days. Be gentle with yourself and take small steps.">😔</button>
+                <button class="mood-btn" data-mood="sad" data-quote="Your feelings are valid. Don't hesitate to lean on a friend, family member, or school counselor.">😢</button>
+            </div>
+            <div id="mood-feedback" class="mood-feedback-box">
+                <p>Select your current mood above to display your personalized daily reflection quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

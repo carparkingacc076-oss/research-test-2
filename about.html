@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | MindPulse AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="ai-pulse-ring"></div>
+            <i class="fa-solid fa-brain-circuit loader-icon"></i>
+            <h2>Loading MindPulse AI...</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <header id="header" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>MindPulse AI</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="resources.html">Resources</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="assessment.html" class="btn-primary-sm">Start Screening</a>
+                <button id="mobile-menu-btn" aria-label="Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-container">
+        <div class="section-header">
+            <h2>About This Project</h2>
+            <p>This website helps senior high school students reflect on their mental well-being and discover supportive habits.</p>
+        </div>
+        <div class="glass-card" style="padding: 2rem; text-align: left;">
+            <p>The assessment is designed to encourage self-awareness and provide simple guidance for stress management, rest, support, and healthy routines.</p>
+            <p style="margin-top: 0.75rem;">It was built as an educational awareness tool for students who want to better understand their emotions, habits, and wellbeing patterns in a calm and private way.</p>
+            <p style="margin-top: 0.75rem;">Each section of the website connects with the others: the assessment gives insight, the resources offer support, and the tracker helps monitor mood over time.</p>
+            <p style="margin-top: 0.75rem;">This website should be used as a supportive tool, not a medical diagnosis. If stress becomes overwhelming, talking with a trusted adult, school counselor, or healthcare professional is important.</p>
+        </div>
+    </section>
+
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

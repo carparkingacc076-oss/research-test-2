@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | MindPulse AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="ai-pulse-ring"></div>
+            <i class="fa-solid fa-brain-circuit loader-icon"></i>
+            <h2>Loading MindPulse AI...</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <header id="header" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>MindPulse AI</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="resources.html">Resources</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="assessment.html" class="btn-primary-sm">Start Screening</a>
+                <button id="mobile-menu-btn" aria-label="Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-container">
+        <div class="section-header">
+            <h2>Platform Features</h2>
+            <p>Interactive tools for assessment, reflection, and support.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card"><i class="fa-solid fa-brain"></i><h4>Validated Screeners</h4><p>PHQ-9 and GAD-7 symptom screeners with published scoring guidance. Results are not a diagnosis.</p></div>
+            <div class="feature-card"><i class="fa-solid fa-user-secret"></i><h4>Confidential Screening</h4><p>Your responses are treated with privacy and care, making the experience safer and more comfortable.</p></div>
+            <div class="feature-card"><i class="fa-solid fa-chart-line"></i><h4>Screening Guidance</h4><p>Separate PHQ-9 and GAD-7 symptom ranges with general next-step guidance.</p></div>
+            <div class="feature-card"><i class="fa-solid fa-mobile-screen"></i><h4>Easy Accessibility</h4><p>Designed to work smoothly on mobile and desktop so students can use it anywhere.</p></div>
+            <div class="feature-card"><i class="fa-solid fa-lightbulb"></i><h4>Daily Wellness Tips</h4><p>Short practical suggestions that support sleep, balance, breathing, and emotional calm.</p></div>
+            <div class="feature-card"><i class="fa-solid fa-clipboard-check"></i><h4>Wellness Checklist</h4><p>A simple tracker to remind students of healthy habits they can follow each day.</p></div>
+        </div>
+    </section>
+
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

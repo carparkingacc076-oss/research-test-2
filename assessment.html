@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment | MindPulse AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="ai-pulse-ring"></div>
+            <i class="fa-solid fa-brain-circuit loader-icon"></i>
+            <h2>Loading MindPulse AI...</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <header id="header" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>MindPulse AI</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="resources.html">Resources</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="assessment.html" class="btn-primary-sm">Start Screening</a>
+                <button id="mobile-menu-btn" aria-label="Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section id="assessment" class="section-container">
+        <div class="section-header">
+            <p>For each item, choose how often you experienced it during the past two weeks. These screening tools do not provide a diagnosis.</p>
+        </div>
+        <div class="assessment-wrapper glass-card">
+            <div class="assessment-progress-bar">
+                <div id="assessment-progress-fill" style="width: 6.25%;"></div>
+            </div>
+            <form id="assessment-form">
+                <div id="assessment-questions"></div>
+                <div class="assessment-controls">
+                    <button type="button" id="prev-btn" class="btn-secondary" disabled><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                    <button type="button" id="next-btn" class="btn-primary">Next <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" id="submit-btn" class="btn-glow" style="display: none;"><i class="fa-solid fa-clipboard-check"></i> View Screening Results</button>
+                </div>
+            </form>
+
+            <div id="ai-result-container" class="hidden-result">
+                <div class="result-header">
+                    <div class="screening-scores" aria-label="Screening scores">
+                        <div class="screening-score-card">
+                            <h4>PHQ-9 · Depression symptoms</h4>
+                            <p><span id="phq9-score">0</span><small>/27</small></p>
+                            <strong id="phq9-severity">Not scored</strong>
+                        </div>
+                        <div class="screening-score-card">
+                            <h4>GAD-7 · Anxiety symptoms</h4>
+                            <p><span id="gad7-score">0</span><small>/21</small></p>
+                            <strong id="gad7-severity">Not scored</strong>
+                        </div>
+                    </div>
+                    <div class="result-title-meta">
+                        <span id="ai-status-badge" class="status-badge">Screening only · Not a diagnosis</span>
+                        <h3 id="result-category-title">Screening results</h3>
+                    </div>
+                </div>
+                <div class="result-body">
+                    <div class="wellness-level-card" id="wellness-level-card">
+                        <span id="wellness-level-label" class="wellness-level-label">Overall indicator</span>
+                        <h3 id="wellness-level-title">Your screening overview</h3>
+                        <p id="wellness-level-description"></p>
+                    </div>
+                    <div class="insight-box">
+                        <h4><i class="fa-solid fa-clipboard-check"></i> What these scores mean</h4>
+                        <p id="ai-insight-text">Your PHQ-9 and GAD-7 results will appear here.</p>
+                    </div>
+                    <div id="safety-alert" class="safety-alert" hidden aria-live="polite"></div>
+                    <div id="local-hospital-support" class="local-hospital-support" hidden aria-live="polite">
+                        <h4><i class="fa-solid fa-hospital"></i> Local hospital support · Sablayan</h4>
+                        <p><strong>St. Martin’s Mission Hospital</strong><br>Poblacion, Sablayan, Occidental Mindoro</p>
+                        <p class="hospital-phone-list"><strong>Listed contact numbers:</strong><br><a href="tel:+63437346817">(043) 734-6817</a><br><a href="tel:+63437365205">(043) 736-5205</a><br><a href="tel:+639167131279">0916 713 1279</a></p>
+                        <p class="hospital-contact-note">Number listing: Hospitals Contact Numbers PH directory. Please call to confirm availability. For immediate danger, call 911.</p>
+                    </div>
+                    <div class="recommendations-box">
+                        <h4><i class="fa-solid fa-list-check"></i> Personalized Tips & Next Steps</h4>
+                        <p class="expert-tips-note">These tips summarize published guidance. Each tip names its source and physician reviewer; they are not direct quotes or personal medical prescriptions.</p>
+                        <ul id="recommendations-list"></ul>
+                    </div>
+                    <p class="disclaimer-note"><i class="fa-solid fa-triangle-exclamation"></i> These validated screeners can indicate symptoms but cannot diagnose a condition. Discuss concerns with a qualified healthcare professional.</p>
+                    <button type="button" id="retake-btn" class="btn-secondary"><i class="fa-solid fa-rotate-right"></i> Retake Assessment</button>
+                </div>
+            </div>
+
+            <div class="history-section" style="margin-top: 2rem;">
+                <div class="section-header" style="margin-bottom: 1rem;">
+                    <h2>Assessment History</h2>
+                    <p>Your recent screening results are saved here for easy review.</p>
+                </div>
+                <div id="assessment-history" class="history-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

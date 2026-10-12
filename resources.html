@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | MindPulse AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="ai-pulse-ring"></div>
+            <i class="fa-solid fa-brain-circuit loader-icon"></i>
+            <h2>Loading MindPulse AI...</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <header id="header" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>MindPulse AI</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="resources.html">Resources</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="assessment.html" class="btn-primary-sm">Start Screening</a>
+                <button id="mobile-menu-btn" aria-label="Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-container">
+        <div class="section-header">
+            <h2>Mental Health Resources & Daily Tips</h2>
+            <p>Expandable guides and instant randomized self-care wellness strategies</p>
+        </div>
+        <div class="glass-card" style="padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; text-align: left;">
+            <p>These resources are meant to support students during stressful periods by encouraging healthy routines, rest, connectedness, and self-kindness.</p>
+            <p style="margin-top: 0.5rem;">Small actions such as breathing slowly, drinking water, sleeping on time, and asking for help can make a meaningful difference.</p>
+        </div>
+        <div class="daily-tip-box glass-card">
+            <div class="tip-header">
+                <h3><i class="fa-solid fa-lightbulb"></i> Daily AI Wellness Tip Generator</h3>
+                <button id="generate-tip-btn" class="btn-primary-sm">Generate Tip</button>
+            </div>
+            <p id="daily-tip-display">Click the button above to load today's randomized Senior High School coping strategy tip.</p>
+        </div>
+        <div class="resources-grid">
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Stress Management</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Identify academic triggers, practice time chunking, and utilize the Pomodoro technique to break large requirements down into manageable 25-minute sprints.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Healthy Sleep Hygiene</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Aim for 8 hours of quality rest. Power down electronic screens at least 45 minutes before bedtime to support natural melatonin production.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Physical Exercise</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Engage in at least 30 minutes of moderate activity like walking, stretching, or sports to release endorphins and reduce systemic stress.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Healthy Nutrition & Hydration</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Maintain stable blood sugar levels by eating balanced meals and drinking sufficient water throughout your school day.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

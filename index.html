@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPulse AI | Student Mental Wellness Assessment</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="ai-pulse-ring"></div>
+            <i class="fa-solid fa-brain-circuit loader-icon"></i>
+            <h2>Initializing AI Well-being System...</h2>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Bar -->
+    <header id="header" class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-brain"></i>
+                <span>MindPulse AI</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="features.html">Features</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="resources.html">Resources</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="assessment.html" class="btn-primary-sm">Start Screening</a>
+                <button id="mobile-menu-btn" aria-label="Mobile Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-animation">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge-pill">
+                <i class="fa-solid fa-sparkles"></i> Official Student Wellness Platform from Sabahis Comprehensive High School
+            </div>
+            <h1 class="hero-title">
+                Student Mental <br>
+                <span class="typewriter-text" data-words='["Wellness Assessment", "Support Hub", "Daily Reflection"]'></span>
+            </h1>
+            <p class="hero-subtitle">
+                A secure, student-friendly platform designed to help students from Sabahis Comprehensive High School reflect on depression and anxiety symptoms with established screening tools and access supportive resources.
+            </p>
+            <div class="hero-buttons">
+                <a href="assessment.html" class="btn-glow">
+                    <span>Start Assessment</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="about.html" class="btn-outline">
+                    <span>Learn More</span> <i class="fa-solid fa-circle-info"></i>
+                </a>
+            </div>
+            <div class="badge-pill" style="margin-top: 1rem; background: rgba(255,255,255,0.08);">
+                <i class="fa-solid fa-users"></i> Created by Group 2, PR2
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3 class="counter" data-target="16">0</h3><span class="symbol"> Q</span>
+                    <p>Student Questions</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="counter" data-target="2">0</h3><span class="symbol"> Scales</span>
+                    <p>Validated Screeners</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="counter" data-target="1">0</h3><span class="symbol"> Page</span>
+                    <p>Support Hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container">
+        <div class="section-header">
+            <h2>About This Project</h2>
+            <p>This website offers a student-friendly mental wellness screening experience focused on awareness, reflection, and healthy support habits.</p>
+        </div>
+        <div class="glass-card" style="padding: 2rem; text-align: left;">
+            <p>The assessment is designed to help senior high school students better understand their stress patterns and access practical coping strategies in a calm, supportive environment.</p>
+            <p style="margin-top: 0.75rem;">It includes confidential PHQ-9 and GAD-7 screening results, general next-step guidance, daily wellness tips, and help-seeking resources.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-container alt-bg">
+        <div class="section-header">
+            <h2>Platform Features</h2>
+            <p>Engineered for seamless navigation, security, and intuitive guidance</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-brain"></i><h4>Validated Screeners</h4><p>PHQ-9 and GAD-7 symptom screeners with published scoring guidance.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-user-secret"></i><h4>Confidential Screening</h4><p>Data privacy first design safeguarding user inputs locally.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-chart-line"></i><h4>Screening Guidance</h4><p>Separate symptom scores and general next steps based on published screening ranges.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-gauge-high"></i><h4>Student Dashboard</h4><p>Real-time analytics tracker summarizing wellness journeys.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-book-medical"></i><h4>Mental Health Resources</h4><p>Curated articles, guides, and professional coping exercises.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-headset"></i><h4>Counselor Support</h4><p>Direct routes and protocols to connect with school counselors.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-lock"></i><h4>Privacy Protection</h4><p>Encrypted local storage preventing unnecessary third-party leaks.</p></div>
+            <div class="feature-card scroll-reveal"><i class="fa-solid fa-mobile-screen"></i><h4>Easy Accessibility</h4><p>Fully responsive design optimized for mobile, tablet, and desktop.</p></div>
+        </div>
+    </section>
+
+    <!-- Self-Assessment Section -->
+    <section id="assessment" class="section-container">
+        <div class="section-header">
+            <p>For each item, choose how often you experienced it during the past two weeks. These screening tools do not provide a diagnosis.</p>
+            <p class="disclaimer-note" style="margin-top: 0.7rem;"><i class="fa-solid fa-brain"></i> This combines two established symptom screeners: PHQ-9 for depression symptoms and GAD-7 for anxiety symptoms. Results are not a diagnosis.</p>
+        </div>
+        
+        <div class="assessment-wrapper glass-card">
+            <div class="assessment-progress-bar">
+                <div id="assessment-progress-fill" style="width: 6.25%;"></div>
+            </div>
+            
+            <form id="assessment-form">
+                <div id="assessment-questions"></div>
+                <div class="assessment-controls">
+                    <button type="button" id="prev-btn" class="btn-secondary" disabled><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                    <button type="button" id="next-btn" class="btn-primary">Next <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" id="submit-btn" class="btn-glow" style="display: none;"><i class="fa-solid fa-clipboard-check"></i> View Screening Results</button>
+                </div>
+            </form>
+
+            <!-- Validated Screening Result Display -->
+            <div id="ai-result-container" class="hidden-result">
+                <div class="result-header">
+                    <div class="screening-scores" aria-label="Screening scores">
+                        <div class="screening-score-card">
+                            <h4>PHQ-9 · Depression symptoms</h4>
+                            <p><span id="phq9-score">0</span><small>/27</small></p>
+                            <strong id="phq9-severity">Not scored</strong>
+                        </div>
+                        <div class="screening-score-card">
+                            <h4>GAD-7 · Anxiety symptoms</h4>
+                            <p><span id="gad7-score">0</span><small>/21</small></p>
+                            <strong id="gad7-severity">Not scored</strong>
+                        </div>
+                    </div>
+                    <div class="result-title-meta">
+                        <span id="ai-status-badge" class="status-badge">Screening only · Not a diagnosis</span>
+                        <h3 id="result-category-title">Screening results</h3>
+                    </div>
+                </div>
+                <div class="result-body">
+                    <div class="wellness-level-card" id="wellness-level-card">
+                        <span id="wellness-level-label" class="wellness-level-label">Overall indicator</span>
+                        <h3 id="wellness-level-title">Your screening overview</h3>
+                        <p id="wellness-level-description"></p>
+                    </div>
+                    <div class="insight-box">
+                        <h4><i class="fa-solid fa-clipboard-check"></i> What these scores mean</h4>
+                        <p id="ai-insight-text">Your PHQ-9 and GAD-7 results will appear here.</p>
+                    </div>
+                    <div id="safety-alert" class="safety-alert" hidden aria-live="polite"></div>
+                    <div id="local-hospital-support" class="local-hospital-support" hidden aria-live="polite">
+                        <h4><i class="fa-solid fa-hospital"></i> Local hospital support · Sablayan</h4>
+                        <p><strong>St. Martin’s Mission Hospital</strong><br>Poblacion, Sablayan, Occidental Mindoro</p>
+                        <p class="hospital-phone-list"><strong>Listed contact numbers:</strong><br><a href="tel:+63437346817">(043) 734-6817</a><br><a href="tel:+63437365205">(043) 736-5205</a><br><a href="tel:+639167131279">0916 713 1279</a></p>
+                        <p class="hospital-contact-note">Number listing: Hospitals Contact Numbers PH directory. Please call to confirm availability. For immediate danger, call 911.</p>
+                    </div>
+                    <div class="recommendations-box">
+                        <h4><i class="fa-solid fa-list-check"></i> Personalized Tips & Next Steps</h4>
+                        <p class="expert-tips-note">These tips summarize published guidance. Each tip names its source and physician reviewer; they are not direct quotes or personal medical prescriptions.</p>
+                        <ul id="recommendations-list"></ul>
+                    </div>
+
+                    <p class="disclaimer-note"><i class="fa-solid fa-triangle-exclamation"></i> These validated screeners can indicate symptoms but cannot diagnose a condition. Discuss concerns with a qualified healthcare professional.</p>
+                    <button type="button" id="retake-btn" class="btn-secondary"><i class="fa-solid fa-rotate-right"></i> Retake Assessment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section-container alt-bg">
+        <div class="section-header" style="margin-top: 0; margin-bottom: 1.5rem;">
+            <h2>Mental Health Resources & Daily Tips</h2>
+            <p>Expandable guides and instant randomized self-care wellness strategies</p>
+        </div>
+
+        <div class="daily-tip-box glass-card">
+            <div class="tip-header">
+                <h3><i class="fa-solid fa-lightbulb"></i> Daily AI Wellness Tip Generator</h3>
+                <button id="generate-tip-btn" class="btn-primary-sm">Generate Tip</button>
+            </div>
+            <p id="daily-tip-display">Click the button above to load today's randomized Senior High School coping strategy tip.</p>
+        </div>
+
+        <div class="resources-grid">
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Stress Management</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Identify academic triggers, practice time chunking, and utilize the Pomodoro technique to break large requirements down into manageable 25-minute sprints.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Healthy Sleep Hygiene</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Aim for 8 hours of quality rest. Power down electronic screens at least 45 minutes before bedtime to support natural melatonin production.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Physical Exercise</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Engage in at least 30 minutes of moderate activity like walking, stretching, or sports to release endorphins and reduce systemic stress.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Healthy Nutrition & Hydration</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Maintain stable blood sugar levels by eating balanced meals and drinking sufficient water throughout your school day.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Mindfulness & Meditation</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Spend 5 minutes daily focusing entirely on breath awareness to ground your thoughts and center your mental attention.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Deep Breathing Techniques</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Try Box Breathing: Inhale for 4 seconds, hold for 4 seconds, exhale for 4 seconds, and hold empty for 4 seconds to lower heart rate.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Time Management</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Use planners or digital calendars to schedule school requirements, study sessions, and intentional personal relaxation time.</p></div>
+            </div>
+            <div class="resource-card glass-card">
+                <div class="res-title"><h4>Positive Affirmations</h4><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="res-content"><p>Replace self-critical loops with encouraging perspectives: 'I am learning at my own pace, and my worth is not defined solely by grades.'</p></div>
+            </div>
+        </div>
+
+        <div class="section-header" style="margin-top: 2rem; margin-bottom: 1rem;">
+            <h2>Daily Wellness Checklist</h2>
+            <p>Each day brings a fresh checklist to support your wellbeing. Progress saves automatically.</p>
+            <p id="checklist-date-label" style="margin-top: 0.4rem; font-weight: 600; color: var(--accent);"></p>
+        </div>
+        <div class="checklist-container glass-card">
+            <ul class="checklist-items"></ul>
+        </div>
+    </section>
+
+    <section class="section-container">
+        </div>
+        <div class="history-section" style="margin-top: 2rem;">
+            <div class="section-header" style="margin-bottom: 1rem;">
+                <h2>Assessment History</h2>
+                <p>Your recent screening results are saved here for easy review.</p>
+            </div>
+            <div id="assessment-history" class="history-list"></div>
+        </div>
+    </section>
+
+    <!-- Daily Mood Tracker -->
+    <section id="tracker" class="section-container alt-bg">
+        <div class="section-header">
+            <h2>Daily Mood Tracker</h2>
+            <p>Log how you are feeling today to receive motivational insight</p>
+        </div>
+        <div class="tracker-card glass-card">
+            <div class="mood-selectors">
+                <button class="mood-btn" data-mood="great" data-quote="Fantastic energy! Keep channeling this positivity into your studies and hobbies today.">😀</button>
+                <button class="mood-btn" data-mood="good" data-quote="Wonderful! Steady progress builds magnificent achievements. Keep up the great flow.">😊</button>
+                <button class="mood-btn" data-mood="neutral" data-quote="A balanced day is a peaceful day. Take time to check in with yourself and breathe.">😐</button>
+                <button class="mood-btn" data-mood="low" data-quote="It's completely okay to have low-energy days. Be gentle with yourself and take small steps.">😔</button>
+                <button class="mood-btn" data-mood="sad" data-quote="Your feelings are valid. Don't hesitate to lean on a friend, family member, or school counselor.">😢</button>
+            </div>
+            <div id="mood-feedback" class="mood-feedback-box">
+                <p>Select your current mood above to display your personalized daily reflection quote.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our mental health awareness platform</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item glass-card">
+                <div class="faq-question"><h4>What is Mental Well-being?</h4><i class="fa-solid fa-plus"></i></div>
+                <div class="faq-answer"><p>Mental well-being is a state of psychological wellness where an individual realizes their own abilities, can cope with normal stresses of student life, can work productively, and contributes to their community.</p></div>
+            </div>
+            <div class="faq-item glass-card">
+                <div class="faq-question"><h4>How does the assessment work?</h4><i class="fa-solid fa-plus"></i></div>
+                <div class="faq-answer"><p>The assessment analyzes Likert-scale questionnaire responses across stress, sleep, motivation, socialization, and emotional regulation parameters to categorize current mental health balance.</p></div>
+            </div>
+            <div class="faq-item glass-card">
+                <div class="faq-question"><h4>Is my information confidential?</h4><i class="fa-solid fa-plus"></i></div>
+                <div class="faq-answer"><p>Yes, absolutely. All responses and scores are processed locally within your browser session or secure local storage. No personal diagnostic profiles are transmitted without consent.</p></div>
+            </div>
+            <div class="faq-item glass-card">
+                <div class="faq-question"><h4>Does this website diagnose mental illness?</h4><i class="fa-solid fa-plus"></i></div>
+                <div class="faq-answer"><p>No. This web portal is built strictly for educational self-awareness, screening orientation, and wellness tips. It is not a clinical instrument and does not replace certified psychological evaluations.</p></div>
+            </div>
+            <div class="faq-item glass-card">
+                <div class="faq-question"><h4>How can I seek professional help?</h4><i class="fa-solid fa-plus"></i></div>
+                <div class="faq-answer"><p>Students experiencing severe stress or mental distress should reach out directly to their school guidance counselor, campus health clinic, or licensed mental health practitioners.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Banner -->
+    <section class="disclaimer-banner">
+        <div class="disclaimer-content">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p><strong>Disclaimer:</strong> This website is designed only for educational purposes and mental well-being awareness. It does not diagnose mental illnesses and should not replace licensed mental health professionals. If you are experiencing severe emotional distress, please seek assistance from your school's guidance counselor or a qualified mental health professional.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-brain"></i> MindPulse AI</h3>
+                <p>Development of an AI-Powered Mental Well-being Assessment Website for Senior High School Students.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MindPulse AI. Student Mental Wellness Assessment Platform from Sabahis Comprehensive High School. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; color: var(--text-muted);">Created by Group 2, PR2</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
